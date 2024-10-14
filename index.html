@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,37 @@
     <link rel="stylesheet" href="./src/css/responsive.css">
     <title>Formulário com validação</title>
 </head>
+
 <body>
     <main>
         <section class="conteudo">
             <div class="pergunta">
                 <h2 class="titulo">FICOU COM DUVIDA? <br>
                     NOS MANDE UMA MENSAGEM!</h2>
-                    <p>caso tenha ficado com qualquer dúvida basta nos enviar uma mensagem e entraremos em contato em menos de 24h.</p>
+                <p>caso tenha ficado com qualquer dúvida basta nos enviar uma mensagem e entraremos em contato em menos
+                    de 24h.</p>
             </div>
             <div class="formulario">
-                <input class="camposFormulario" type="text" placeholder="  Nome completo *">
-                <input class="camposFormulario" type="email" placeholder="  Email *">
-                <input class="camposFormulario" type="number" placeholder="  Telefone *">
-                <input class="camposFormulario mensagem" type="text" placeholder="  Mensagem *">
+                <ul>
+                    <li class="campo" >
+                        <input class="area" type="text" placeholder="Nome completo *">
+                        <p class="aviso">Obrigatório*</p>
+                    </li>
+                    <li class="campo" >
+                        <input class="area"  type="email" placeholder="Email *">
+                        <p class="aviso ">Obrigatório*</p>
+                    </li>
+                    <li class="campo" >
+                        <input class="area"  type="number" placeholder="Telefone *">
+                        <p class="aviso">Obrigatório*</p>
+                    </li>
+                    <li class="campo mensagem" >
+                        <textarea class="area"  name="text" placeholder="Mensagem *"></textarea>
+                        <p class="aviso">Obrigatório*</p>
+                    </li>
+                </ul>
 
-                <p>*campos obrigatórios</p>
+                <p class="camposObrigatorios">*campos obrigatórios</p>
                 <button class="btn-enviar">Enviar</button>
             </div>
         </section>
@@ -30,4 +47,5 @@
 
     <script src="./src/js/form.js"></script>
 </body>
+
 </html>

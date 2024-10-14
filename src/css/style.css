@@ -50,29 +50,63 @@ main {
     flex-direction: column;
     background-color: #fff;
     width: 480px;
-    height: 490px;
+    height: 500px;
     margin-left: 100px;
     padding: 0 20px;
+    border-radius: 4px;
 }
 
-.conteudo .formulario .camposFormulario {
-    border: 2px solid #000;
+.conteudo .formulario ul .campo .area {
+    font-size: 15px;
+    font-weight: 700;
+    width: 425px;
+    height: 35px;
+    border: 2px solid ;
     border-radius: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 1px;
+    margin-top: 18px;
+    padding-left: 8px;
     height: 40px;
     font-size: 15px;
     font-weight: 700;
 }
 
-.conteudo .formulario .camposFormulario.mensagem {
-    padding: 15px 0 100px 0;
-    margin-bottom: 5px;
+.conteudo .formulario ul .campo.mensagem .area {
+    resize: none;
+    font-family: "roboto";
+    padding-top: 5px;
+    height: 115px;
 }
 
-.conteudo .formulario p {
+.conteudo .formulario .campo .area.preenchido{
+    border-color:#009000;
+}
+
+.conteudo .formulario .campo .area.naoPreenchido  {
+    border: 2px solid #900000;
+}
+
+.aviso {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #900000;
+    display: none;
+}
+
+.aviso.ativo {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #900000;
+}
+
+.conteudo .formulario .camposObrigatorios {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 28px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .conteudo .formulario .btn-enviar {
@@ -84,4 +118,8 @@ main {
     color: #fff;
     font-size: 15px;
     font-weight: 700;
+}
+
+.conteudo .formulario .btn-enviar:hover {
+    cursor: pointer;
 }
